@@ -1,0 +1,74 @@
+// переменные
+:root {
+  --Manrope: "Manrope", sans-serif;
+
+  --Pink: #CC006F;
+  --Dark: #121D36;
+  --Black: #141E34;
+  --White: #ffffff;
+  --Blue: #008AD1;
+  --Yellow: #FFCB00;
+  --BG: #F4F7FC;
+  --Text: #5A6173;
+  --Green: #43AD45;
+  --Line: #dddfe6;
+
+
+  --Mod-1: rgba(18, 29, 54, 0.6);
+  --Mod-2: rgba(18, 29, 54, 0.15);
+  --Mod-3: rgba(18, 29, 54, 0.25);
+  --Mod-4:  #DCDDE1;
+  --Mod-5:  rgba(0, 0, 0, 0.15);
+  --Mod-6:  #777e90;
+  --Mod-7:  #F1FAFF;
+  --Mod-8:  #6D7485;
+
+  --font-1: 16px;
+}
+@import "site/global";
+
+@import "bem/visually-hidden";
+@import "bem/button";
+@import "bem/button-menu";
+@import "bem/swiper-button";
+@import "bem/navigation";
+@import "bem/top-contacts";
+@import "bem/wrapper";
+@import "bem/contacts";
+@import "bem/title-group";
+@import "bem/section";
+@import "bem/arrow-icon";
+@import "bem/confurm";
+@import "bem/custom-form";
+@import "bem/custom-icon";
+@import "bem/swiper";
+@import "bem/custom-grid";
+
+@import "section/header";
+@import "section/first-screen";
+@import "section/announcement-catalog";
+@import "section/get-offer";
+@import "section/advantages-company";
+@import "section/reviews";
+@import "section/portfolio";
+@import "section/content";
+@import "section/footer";
+
+@import "activity/menu-open";
+@import "activity/modal-show";
+@import "activity/header-sticky";
+
+
+.mob-show {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mob-hide {
+    display: none;
+  }
+
+  .mob-show {
+    display: block;
+  }
+}

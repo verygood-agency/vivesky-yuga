@@ -1,0 +1,26 @@
+.advantages-company {
+  background-image: url(../img/advantages-company/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  @media (max-width: 1023px) {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 767px) {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 24px;
+    }
+  }
+}
