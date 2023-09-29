@@ -1567,6 +1567,11 @@ a:hover .arrow-icon path:not([class]) {
   color: var(--Pink);
   font-weight: 700;
 }
+@media (max-width: 767px) {
+  .content .content__text {
+    font-size: 16px;
+  }
+}
 
 .footer {
   background-image: url(../img/advantages-company/1.jpg);
