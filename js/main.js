@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-   // слайдер с работами
-   if (document.querySelector('.js-portfolio-slider')) {
+  // слайдер с работами
+  if (document.querySelector('.js-portfolio-slider')) {
     let swiper3 = new Swiper('.js-portfolio-slider', {
       loop: true,
       slidesPerView: 2,
@@ -121,7 +121,25 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     });
-  }
+  };
+
+  // Получаем все ссылки из меню
+  var menuLinks = document.querySelectorAll('.navigation__link');
+
+  // Получаем текущий URL
+  var currentUrl = window.location.href;
+
+  // Проходим по всем пунктам меню
+  menuLinks.forEach(function (link) {
+    link.classList.remove('active');
+
+    if (link.href === currentUrl) {
+      link.removeAttribute('href');
+      link.classList.add('active');
+
+    }
+  });
+
 
 
 
